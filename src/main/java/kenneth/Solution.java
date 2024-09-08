@@ -10,6 +10,16 @@ public class Solution {
 
     public int smallestEvenMultiple(int n) {
         // Given a positive integer n, return the smallest positive integer that is a multiple of both 2 and n.
-        return n;
+        // 1 <= n <= 150
+
+
+        if (n % 2 != 0) {
+            // if n is odd number
+            return n * 2;
+        } else {
+            return n;
+        }
+
+
     }
 }
